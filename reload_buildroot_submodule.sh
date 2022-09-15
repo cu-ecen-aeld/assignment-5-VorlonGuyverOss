@@ -1,4 +1,4 @@
-#!/bin/bash -x
+#!/bin/bash
 
 FIRST_INPUT="$1"
 SECOND_INPUT="yes"
