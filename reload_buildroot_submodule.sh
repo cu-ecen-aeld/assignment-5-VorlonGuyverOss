@@ -8,11 +8,13 @@ echo ${SECOND_INPUT}
 
 if [[ $FIRST_INPUT == ${SECOND_INPUT} ]]; then
 {
-    vim .gitmodules
+#     vim .gitmodules
+#
+#     git add .gitmodules
+#
+#     vim .git/config
 
-    git add .gitmodules
-
-    vim .git/config
+    git submodule deinit buildroot
 
     git rm --cached buildroot
 
