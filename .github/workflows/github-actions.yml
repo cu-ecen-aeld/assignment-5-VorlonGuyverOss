@@ -7,8 +7,6 @@ jobs:
         timeout-minutes: 120
         steps:
           - uses: actions/checkout@v2
-            with:
-                repo-token: ${{ secrets.SECRET_TOKEN }}
           - name: Checkout submodules
             run: git submodule update --init --recursive
           - uses: webfactory/ssh-agent@v0.5.3
